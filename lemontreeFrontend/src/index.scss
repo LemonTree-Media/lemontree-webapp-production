@@ -1,0 +1,612 @@
+
+/* React starter */
+
+body {
+    margin: 0;
+    font-family: "Avenir LT", avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                 sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 0.85em !important;
+    overflow-x: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                 monospace;
+}
+
+/* custom css, only where necessary */
+
+a {
+    text-decoration: underline;
+}
+
+a.no-text-decoration { font-size: 1.4em; }
+
+b strong { font-weight: 700 !important; }
+
+.block-underline { border-bottom: 1px solid black; }
+
+.block-underline-hover:hover { border-bottom: 1px solid black; }
+
+.btn-xs {
+    font-size: 0.7rem !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+.client-logo { width: 67%; }
+
+.icofont-star {
+  color: #FFBD2E;
+}
+
+.iconHome {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 5px;
+   box-shadow: 4px 3px 10px 0.5px #D3D3D3;
+}
+
+.tag{
+  border: 0px solid gray;
+  background-color: #EAEAEA;
+  border-radius: 13px;
+  padding: 8px;
+  font-size: 0.85rem;
+}
+
+
+.fixed-width-100 {
+    display: inline-block;
+    width: 100px;
+}
+
+footer {
+    background-color: whitesmoke;
+    font-size: 0.9rem;
+}
+ @media only screen and (max-width: 800px) {
+    footer {
+      font-size: 0.7rem;
+  }
+}
+ @media only screen and (max-width: 580px) {
+    #contactInfo {
+      color: transparent;
+      position: absolute
+  }
+}
+
+.gray { color: var(--gray); }
+
+.green { color: rgb(67,192,64); }
+
+img:not(#sider) {
+    max-width: 100%;
+    border-radius: 9px;
+}
+
+
+.left-border {
+    border-left: 2px solid gray;
+    padding-left: 15px;
+}
+
+.line-separator {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 45px;
+    border-bottom: 1px solid gray;
+}
+
+.mb-medium { margin-bottom: 7rem; }
+
+.mb-large { margin-bottom: 7rem; }
+
+.minibox {
+    display: inline-block;
+    border: 3px solid gainsboro;
+    border-radius: 9px;
+    margin-right: 1rem;
+    width: 110px;
+}
+
+.mx-medium {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.mx-large {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+iframe {
+  border-radius: 9px;
+}
+
+.generalEmbed {
+   border-radius: 0px !important;
+}
+
+.no-text-decoration { text-decoration: none !important; }
+
+.profile {
+    max-height: 60px;
+    border-radius: 80px !important;
+}
+
+svg {
+    width: 100%;
+}
+.spacer { width: 5rem; }
+
+.translate-up { margin-top: -1.5em; width:100% }
+
+.video-description {
+    border-radius: 9px;
+    border: 2px solid whitesmoke;
+}
+
+.h2 font-weight-bold mb-5 ml-5 text-left {
+    color: white !important;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.creativeModal {
+  padding: 2rem! important;
+}
+
+.transform {margin-left: 3rem; margin-bottom: 3rem}
+
+/* react-bootstrap customization */
+
+$theme-colors: (
+    "secondary": black
+);
+
+.img {width: 48%; margin-top: -29rem; margin-left: 34rem; margin-bottom: 5rem}
+
+a {
+    color: inherit !important;
+}
+
+a:hover {
+    color: inherit !important;
+}
+.navbar {
+  background-color:white;
+  font-size: 0.9rem;
+}
+
+.CTA {
+  margin-left: 1rem
+}
+
+@media only screen and (max-width: 760px) {
+    .CTA {
+      margin-left: -.5rem
+    }
+}
+
+.bg { margin-top: 1rem; }
+
+.h6 {font-size: 0.75rem; font-weight: 300 !important;}
+
+.btn {
+    font-size: 0.75rem;
+    border-radius: 9px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+
+.hero {
+    width: 100%;
+    margin-left: 0rem;
+    overflow: hidden;
+}
+
+
+.button-center {
+    margin: auto;
+
+}
+
+.CTA-center {
+    margin-top: -8rem;
+} 
+
+
+.navbar-expand .navbar-nav .nav-link:not(:nth-child(4)) {
+    padding-right: 1rem;
+}
+
+.dropdown {
+    padding-right: 0.25rem;
+}
+
+
+.h1 {
+    font-size: 3.7em !important;
+    font-weight: bolder !important;
+}
+
+.h2 {
+    font-size: 2.7em !important;
+    font-weight: bolder !important;
+}
+
+.navbar-expand .navbar-nav .nav-link:nth-child(4) {
+    padding-right: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black !important;
+}
+
+p { font-size: 1.4em; }
+
+
+/* element-specific customization */
+
+.top-left {
+    position: relative;
+    top: -25rem;
+    left: 7rem;
+}
+#CTA {
+  width: 100%;
+}
+#CTAexplainer{
+  margin-bottom: 7rem
+}
+#collabUX{
+  margin-top: -5rem;
+  z-index: -1;
+  position: relative
+}
+.heroUXImage{
+  size: 30%;
+  width:30% !important;
+}
+@media screen and (min-width: 420px) { .regularHidden iframe { display:none; } .bg-mobile{display:none }; }
+form {
+    font-size: 1rem;
+}
+.top-right {
+    position: relative;
+    top: -22rem;
+    left: 7rem
+}
+.heroExplain {
+    position: relative;
+    top: -25rem;
+    left: 7rem;
+    width: 50%
+}
+#hero-text{
+    width: 60%
+}
+.bottom-left{
+    position: relative;
+    top: 20rem;
+    right: 26rem;
+}
+header {
+  text-align: left;
+  h1 {
+    font-weight: bolder
+  }
+}
+
+.success {
+  color: #0ff40f;
+}
+
+.error {
+  color: #960303;
+}
+#clientList {
+  margin-top: -15rem;
+  margin-bottom: .5rem
+}
+
+
+
+/* bidding page customization */
+
+.top-right-sider {
+    position: absolute;
+    top: -22rem;
+    left: -10rem
+}
+#sider {
+  position: absolute;
+  width: 179% !important;
+  top: -55.9rem;
+  left: -2rem;
+}
+.thank-you-modal {
+  color: transparent !important;
+
+  .modal-content {
+     background-color: transparent !important;
+     border-color: transparent !important;
+ }
+  Button {
+    margin-top: -7rem;
+    margin-left: 3.5rem;
+    width: 10rem;
+  }
+}
+    /* bidding page - macbook pro 13 */
+    @media only screen and (max-width: 1400px) {
+      #sider {
+            position: absolute;
+            width: 188% !important;
+            top: -58.9rem;
+            left: -6em;
+
+          }
+
+    }
+    /* bidding page - ipad pro horiz */
+    @media only screen and (max-width: 1367px) {
+      #sider {
+            position: absolute;
+            width: 178% !important;
+            top: -55.9rem;
+            left: -5em;
+
+          }
+
+    }
+    /* bidding page - ipad pro vert, ipad horiz */
+    @media only screen and (max-width: 1160px) {
+      #sider {
+            position: absolute;
+            width: 224% !important;
+            top: -58.9rem;
+            left: -9rem;
+
+          }
+      #ContactForm {
+            margin-left: -50rem
+      }
+
+    }
+
+
+
+/* mobile optimization */
+
+/* home page - all mobile */
+@media only screen and (max-width: 420px) {
+    .h1 {
+      font-size: 2.5rem !important;
+    }
+    .h2 {
+      font-size: 2rem !important;
+    }
+
+    .bg {
+        Button{
+          display: none;
+        }
+        img{
+          display: none;    
+        }
+    }
+    .heroImageMobile{
+      position: relative;
+      margin-top: -18rem;
+      z-index: -1;
+    }
+    .bg-mobile {
+      margin-bottom: -20rem;
+      Button{
+        margin-top:5rem
+      }
+      #hero-text{
+        position: relative;
+        width: 90%;
+        top: -24rem;
+        left: 2rem;
+        text-align:left
+      }
+      .heroExplainMobile{
+        position: relative;
+        top: -22rem;
+        left: 2rem;
+        width: 90%;
+        text-align: left;
+        font-size: 1rem !important;
+      }
+    }
+    .clientListLogos {
+      display: none;
+    }
+    .mobileHidden iframe{
+      display: none
+    }
+    #AboutNav{
+      display: none
+    }
+    .h4{
+      font-size:1rem!important
+    }
+    .h5{
+      font-size:0.7rem!important
+    }
+    #collabUX{
+      margin-top: 2rem
+    }
+    #whatWeDo{
+      text-align: left;
+      margin-left: -3rem;
+      margin-top: 0rem;
+    }
+    #ourOfferings{
+      margin: auto;
+      padding-bottom: 3rem
+    }
+     #interactive-portion{
+       p{
+        font-size: 0.9rem
+       }
+       width: 80%;
+       margin: auto
+       img{
+        margin: auto;
+        width:100%!important
+       }
+    }
+    #interactive-portion-2{
+       margin-left:2rem;
+    }
+    #interactive{
+      margin-left:5rem
+    }
+    #trusted{
+      margin-top:6rem;
+      margin: 6rem 1rem
+    }
+
+
+}
+
+@media only screen and (max-width: 750px) {
+  #clientList{
+      margin: 1rem;
+    }
+  .userIdentity{
+    Button{
+      display: none
+    }
+  }
+  #collabUX{
+    margin-top: 5rem
+  }
+
+
+}
+
+/* home page - all mobile horiz, tablet vert*/
+@media only screen and (max-width: 900px) {
+    #clientList{
+      margin-top: -8rem
+    }
+    .bg{
+      Button{
+        width: 10rem;
+        margin-top: -5rem;
+        margin-left: -2rem;
+      }
+    }
+     #interactive-portion{
+       p{
+        font-size: 0.9rem
+       }
+       width: 80%;
+       margin: auto
+       img{
+        margin: auto;
+        width:100%!important
+       }
+    }
+    #interactive-portion-2{
+       margin-left:2rem;
+    }
+     #trusted{
+      margin-top:6rem;
+      margin: 6rem 1rem
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .h1 {
+      font-size: 2.5rem !important;
+    }
+    .h2 {
+      font-size: 2rem !important;
+    }
+    .bg {
+        .h1 {
+          font-size: 2.5rem !important;
+          margin-left:-2.5rem;
+          margin-right:1.5rem;
+          margin-top:1rem;
+        }
+        .translate-up {
+          width: 100%;
+          height: 30rem;
+          overflow: hidden;
+          object-position: 90% 50%;
+          object-fit: cover;
+        }
+        .top-right {
+          position: absolute;
+          top: 27rem;
+          right: 50rem;
+        }
+        .heroExplain {
+          position: absolute;
+          margin-left: 4.5rem;
+          margin-top: -13rem;
+          width: 45%
+        }
+        Button{
+          width: 10rem;
+          margin-top: -8rem;
+          margin-left: -2rem
+        }
+        
+      
+    }
+  #clientList{
+      margin-top: -8rem
+    }
+    .return-to-home {
+      visibility: hidden;
+    }
+    #ourOfferings{
+      margin: auto;
+      padding-bottom: 3rem
+    }
+
+    #interactive-portion{
+       width: 100%;
+       margin: 0rem;
+       img{
+        width:100%;
+        margin: auto;
+        padding: auto
+       }
+    }
+     #interactive-portion-2{
+       margin-left:0rem;
+       .iconHome{
+          margin-left: 2rem;
+       }
+    }
+    .collaboration {
+      display: none
+    }
+    #trusted{
+      margin-top:6rem
+    }
+}
+
+
+    
+@import '~bootstrap/scss/bootstrap.scss';
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+
+
