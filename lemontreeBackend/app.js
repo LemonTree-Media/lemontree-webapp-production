@@ -23,7 +23,9 @@ var creativesRouter = require('./routes/creativesRouter');
 var ideasRouter = require('./routes/ideasRouter');
 
 const url = config.mongoUrl;
-const connect = mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true });
+const connect = mongoose.connect(process.env.MONGODB_URI || url, {
+	 useNewUrlParser: true, 
+	 useUnifiedTopology: true });
 
 connect.then((db) => {
     console.log("Connected correctly to server");
@@ -69,5 +71,10 @@ app.use(function(err, req, res, next) {
 });
 
 app.use(cors);
+
+
+if(process.env.NODE_ENV === 'production'){
+	app.use(express.static('../lemontreeFrontend/build'));
+}
 
 module.exports = app;
